@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Crochetology</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EFD9D1;
+            color: #333;
+        }
+
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+       
+        .item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            cursor: pointer;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            background-color: #eee;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            font-size: 16px;
+            color: #555;
+            background-color: #fff;
+        }
+
+       
+        .question::after {
+            content: "▼";
+            font-size: 18px;
+            position: absolute;
+            right: 20px;
+            transition: transform 0.3s;
+        }
+
+        .item.active .question::after {
+            transform: rotate(180deg);
+        }
+
+        
+        .item.active .answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+   
+    <div class="item">
+        <div class="question">What is Crochetology?</div>
+        <div class="answer">
+            <p>Crochetology is an e-commerce platform that offers durable, yarn-based alternatives to fast fashion, promoting long-lasting, personalized items.</p>
+        </div>
+    </div>
+
+    
+    <div class="item">
+        <div class="question">How do I place an order?</div>
+        <div class="answer">
+            <p>Browse our collection, select your preferred items, and add them to your cart. Proceed to checkout and follow the steps to complete your order.</p>
+        </div>
+    </div>
+
+   
+    <div class="item">
+        <div class="question">What payment methods do you accept?</div>
+        <div class="answer">
+            <p>We accept payments via esewa, khalti, ime pay or any bank transfer to make your shopping experience convenient and secure.</p>
+        </div>
+    </div>
+
+    
+    <div class="item">
+        <div class="question">Can I customize my order?</div>
+        <div class="answer">
+            <p>Yes! We encourage personalization. At Crochetology, we make personalization easy! Simply browse through our products and click the customization option next to the search bar. You’ll then be prompted to fill out a form where you can choose your preferred product, select the color you want, and add any additional details in the personal note box to make it truly yours.</p>
+        </div>
+    </div>
+
+    
+    <div class="item">
+        <div class="question">What is your refund policy?</div>
+        <div class="answer">
+            <p>
+                We require a non-refundable advance of 25% - 50% of your total purchase, which will be applied to your final balance. This advance helps ensure that orders aren't canceled once production has begun.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+  
+    document.querySelectorAll('.question').forEach((question) => {
+        question.addEventListener('click', () => {
+            const faqItem = question.parentElement;
+            faqItem.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

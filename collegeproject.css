@@ -1,0 +1,78 @@
+H1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+   font-size: 40PX;
+   background-color: #999b84;
+   padding: 50px;
+   margin: 0px;
+   border: 0px;
+
+    
+}
+nav{
+    background-color: #efd9d1;
+    padding: 80px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    border: 0px;
+    font-style: italic;
+    
+    
+}
+.nav{
+    flex: content;
+}
+#search{
+    text-align: right;
+    font-size: 30px;
+    margin: 0px;
+    padding: 20px;
+}
+.container-fluid {
+    background-color: #f0d8cc;
+}
+.navbar-toggler .navbar-nav, .dropdown-item{
+    background-color: #f0d8cc;
+
+} 
+#about{
+    font-size: medium;
+    
+    box-sizing: border-box solid 2px black;
+  }
+   
+#carouselExampleControlsNoTouching{
+  background-color: aliceblue;
+      width: 600px; }
+
+#products{
+    font-size: larger;
+}
+#carouselExampleFade{
+    width: 400px;
+    align-items: end;
+    box-sizing: content-box;
+}
+#carouselExampleCaptions{
+    width: 400px;
+}
+footer{
+    background-color: #efd9d1;
+    margin-top: 30px;
+}
+#us{
+    text-align: left;
+}
+      address{
+        text-align: left;
+        margin-bottom: 0px;
+
+      } 
+      #founder{
+        text-align: center;
+         margin: 40px;
+         padding: 20px;
+      }
+    

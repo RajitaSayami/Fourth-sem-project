@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Customization</title>
+    <style>
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.choose {
+    margin-bottom: 20px;
+}
+#chose{
+    padding: 10px;
+}
+
+.customization-options {
+    text-align: left;
+}
+
+.option {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+#sizeSelect, #messageInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customize Your Product</h1> <br>
+        
+        <div class="choose">
+            <h2><p>Choose Your Desired Product:</p></h2> <br>
+            <select name="choose" id="chose">
+                <option value="select">Select your desired product</option>
+                <option value="Glittery Rose Bouquet">Glittery Rose Bouquet</option>
+                <option value="Lily bouquet">Lily bouquet</option>
+                <option value="Baby Breathe Bouquet">Baby Breathe Bouquet</option>
+                <option value="Color Coded Bouquet ">Color Coded Bouquet </option>
+                <option value="Peony Flower">Peony Flower</option>
+                <option value="Carnation Bouquet">Carnation Bouquet</option>
+                <option value="Lilac Bouquet">Lilac Bouquet</option>
+                <option value="Multicolor Rose with spirals Bouquet">Multicolor Rose with spirals Bouquet</option>
+                <option value="Patchwork Cardigan">Patchwork Cardigan</option>
+                <option value="Beanie">Beanie</option>
+                <option value="Muffler">Muffler</option>
+                <option value="Balacava">Balacava</option>
+                <option value="Granny Square Vest">Granny Square Vest</option>
+                <option value="Leg Warmer">Leg Warmer</option>
+                <option value="Scrappy Sweater">Scrappy Sweater</option>
+                <option value="Guitar Keychain">Guitar Keychain</option>
+                <option value="Mini Bouquet keychain">Mini Bouquet keychain</option>
+                <option value="Jellyfish Bagcharm">Jellyfish Bagcharm</option>
+                <option value="Swiss Roll Bagcharm">Swiss Roll Bagcharm</option>
+                <option value="Granny Square Bag">Granny Square Bag</option>
+                <option value="Tulip Pouch">Tulip Pouch</option>
+                <option value="Coquette Purse">Coquette Purse</option>
+                <option value="Hair Wrap">Hair Wrap</option>
+                <option value="Tulip headband">Tulip headband</option>
+                <option value="Bucket Hat">Bucket Hat</option>
+                <option value="Tulip Jwellery Holder">Tulip Jwellery Holder</option>
+                <option value="Coaster">Coaster</option>
+                <option value="Floral Coaster">Floral Coaster</option>
+                <option value="Wall Decor Jellyfish">Wall Decor Jellyfish</option>
+             
+            </select>
+            
+        </div>
+        
+        <div class="customization-options">
+            <div class="option">
+                <h2>Color</h2>
+                <div class="color-options">
+                    <button class="color" style="background-color: black;" onclick="changeColor('black')"></button>
+                    <button class="color" style="background-color: white;" onclick="changeColor('white')"></button>
+                    <button class="color" style="background-color: #ffe2a6;" onclick="changeColor('#ffe2a6')"></button>
+                    <button class="color" style="background-color: #EE7EA0;" onclick="changeColor('#EE7EA0')"></button>
+                    <button class="color" style="background-color: #D20000;" onclick="changeColor('#D20000')"></button>
+                    <button class="color" style="background-color: #FD5E00;" onclick="changeColor('#FD5E00')"></button>
+                    <button class="color" style="background-color: #CE8540;" onclick="changeColor('#CE8540')"></button>
+                    <button class="color" style="background-color: #CDBDEB;" onclick="changeColor('#CDBDEB')"></button>
+                    <button class="color" style="background-color: #E681D3;" onclick="changeColor('#E681D3')"></button>
+                    <button class="color" style="background-color: #8E715B;" onclick="changeColor('#8E715B')"></button>
+                    <button class="color" style="background-color: #568203;" onclick="changeColor('#568203')"></button>
+                    <button class="color" style="background-color: #809671;" onclick="changeColor('#809671')"></button>
+                    <button class="color" style="background-color: #4C2B08;" onclick="changeColor('#4C2B08')"></button>
+                    <button class="color" style="background-color: #F3E9DC;" onclick="changeColor('#F3E9DC')"></button>
+
+                    
+                </div>
+            </div>
+
+            <div class="option">
+                <h2>Size (For Clothings Only)</h2>
+                <select id="sizeSelect">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+
+            <div class="option">
+                <h2>Personal Message</h2>
+                <textarea id="messageInput" placeholder="Add a personal message"></textarea>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart()" href="shop.html">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        
+
+function changeColor(color) {
+    const productImage = document.getElementById('productImage');
+    productImage.style.borderColor = color;  // Example color effect on image
+}
+
+function addToCart() {
+    const size = document.getElementById('sizeSelect').value;
+    const message = document.getElementById('messageInput').value;
+
+    alert(`Added to cart:\nSize: ${size}\nMessage: ${message}`);
+}
+
+    </script>
+</body>
+</html>
