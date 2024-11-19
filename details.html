@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Now!!!</title>
+    <title>Details!!!</title>
     <style>
         * {
             margin: 0;
@@ -31,21 +31,22 @@
         #product-img{
             width: 100%;
             height: auto;
+            align-items: left;
+            
         }
-        #product-title{
+        #product-title, #product-description{
             margin: 15px;
-
-        }
-        #product-description{
-            margin: 10px;
+            text-align: right;
 
         }
         #price{
             color: #1c8adb;
             font-weight: bold;
             margin-bottom: 20px;
+            text-align: right;
         }
-        #buy-now {
+        #details
+         {
             display: inline-block;
             width: 100%;
             padding: 10px;
@@ -63,15 +64,21 @@
         #buy-now:hover {
             background-color: #218838;
         }
+        #customization:hover{
+            text-decoration: none;
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-       <img src="productimage.png" alt="product" id="product-img" >
+       <img src="rose-removebg-preview.png" alt="product" id="product-img" >
        <h2 id="product-title"><b>Product title here.</b></h2>
        <h4 id="product-description">Product description here.</h4>
        <div id="price">price here</div>
-       <button id="buy-now">Buy Now</button>
+       <button id="buy-now" href="payment.html">Buy Now</button>
+       <button id="cart" href="cart.html">Add to cart</button>
+       <button id="customization"><a href="customization.html">Customize</a></button>
 
 
     </div>

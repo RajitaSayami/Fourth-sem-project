@@ -11,7 +11,7 @@
 
 }
 
-.navbar {
+#navbar {
     position: fixed;
     background-color: #333;
     padding: 10px;
@@ -22,7 +22,7 @@
    
 }
 
-.navbar ul {
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -30,12 +30,12 @@
     align-items: center;
 }
 
-.navbar ul li {
+#navbar ul li {
     position: relative;
     margin-right: 20px;
 }
 
-.navbar ul li a {
+#navbar ul li a {
     color: white;
     text-decoration: none;
     padding: 8px 16px;
@@ -43,7 +43,7 @@
     border-radius: 4px;
 }
 
-.navbar ul li a:hover {
+#navbar ul li a:hover {
     background-color: #575757;
     transition: background-color 0.3s ease;
 }
